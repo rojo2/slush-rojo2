@@ -1,0 +1,37 @@
+{
+  "name": "<%= appName %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ROJO 2 <hola@rojo2.com> (http://rojo2.com)",
+  "contributors": [
+    {
+      "name": "Aitor Moreno Melcón",
+      "email": "aitor@rojo2.com"
+    },
+    {
+      "name": "Omar Moreno Melcón",
+      "email": "omar@rojo2.com"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.7.1",
+    "gulp": "^3.8.10",
+    "gulp-browserify": "^0.5.0",
+    "gulp-ftp": "^1.0.1",
+    "gulp-jade": "^0.10.0",
+    "gulp-less": "^1.3.6",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-minify": "0.0.5",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-uglify": "^1.0.1"
+  },
+  "dependencies": {
+    "handlebars": "^2.0.0",
+    "jquery": "^2.1.1"
+  }
+}

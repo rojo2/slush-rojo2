@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Omare Moreno Melcón -- Designer -- @mekanoide
+    Aitor Moreno Melcón -- Developer -- @azazeln28
+
+# THANKS
+
+    To our families
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    LESS, Jade, Browserify
+    Slush, Gulp
