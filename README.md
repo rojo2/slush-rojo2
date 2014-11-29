@@ -5,10 +5,10 @@
 
 ## Getting Started
 
-Install `slush-slush-rojo2` globally:
+Install `slush-rojo2` globally:
 
 ```bash
-$ npm install -g slush-slush-rojo2
+$ npm install -g slush-rojo2
 ```
 
 ### Usage
@@ -16,13 +16,13 @@ $ npm install -g slush-slush-rojo2
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-slush-rojo2
+$ mkdir my-slush-rojo2
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-slush-rojo2 && slush slush-rojo2
+$ cd my-slush-rojo2 && slush slush-rojo2
 ```
 
 ## Getting To Know Slush
@@ -35,10 +35,10 @@ To find out more about Slush, check out the [documentation](https://github.com/k
 
 ## Contributing
 
-See the [CONTRIBUTING Guidelines](https://github.com/aitormoreno/slush-slush-rojo2/blob/master/CONTRIBUTING.md)
+See the [CONTRIBUTING Guidelines](https://github.com/rojo2/slush-rojo2/blob/master/CONTRIBUTING.md)
 
 ## Support
-If you have any problem or suggestion please open an issue [here](https://github.com/aitormoreno/slush-slush-rojo2/issues).
+If you have any problem or suggestion please open an issue [here](https://github.com/rojo2/slush-rojo2/issues).
 
 ## License 
 
