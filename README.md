@@ -1,4 +1,4 @@
-# slush-rojo2 [![Build Status](https://secure.travis-ci.org/aitormoreno/slush-slush-rojo2.png?branch=master)](https://travis-ci.org/aitormoreno/slush-slush-rojo2) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-slush-rojo2.png)](http://badges.enytc.com/for/npm/slush-slush-rojo2)
+# slush-rojo2 [![Build Status](https://secure.travis-ci.org/rojo2/slush-rojo2.png?branch=master)](https://travis-ci.org/rojo2/slush-rojo2) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-rojo2.png)](http://badges.enytc.com/for/npm/slush-rojo2)
 
 > 
 
