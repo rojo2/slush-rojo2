@@ -3,8 +3,8 @@
 
 # TEAM
 
-    Omare Moreno Melcón -- Designer -- @mekanoide
-    Aitor Moreno Melcón -- Developer -- @azazeln28
+    Omar Moreno Melcón -- Designer -- <omar@rojo2.com>
+    Aitor Moreno Melcón -- Developer -- <aitor@rojo2.com>
 
 # THANKS
 
