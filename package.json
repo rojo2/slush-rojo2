@@ -1,22 +1,22 @@
 {
-    "name": "slush-slush-rojo2",
+    "name": "slush-rojo2",
     "description": "",
     "version": "0.1.0",
-    "homepage": "https://github.com/aitormoreno/slush-slush-rojo2",
+    "homepage": "https://github.com/aitormoreno/slush-rojo2",
     "author": {
         "name": "",
         "email": "aitor@rojo2.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/aitormoreno/slush-slush-rojo2.git"
+        "url": "git://github.com/aitormoreno/slush-rojo2.git"
     },
     "bugs": {
-        "url": "https://github.com/aitormoreno/slush-slush-rojo2/issues"
+        "url": "https://github.com/aitormoreno/slush-rojo2/issues"
     },
     "licenses": [{
         "type": "BSD",
-        "url": "https://github.com/aitormoreno/slush-slush-rojo2/blob/master/LICENSE"
+        "url": "https://github.com/aitormoreno/slush-rojo2/blob/master/LICENSE"
     }],
     "main": "slushfile.js",
     "engines": {
