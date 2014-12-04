@@ -1,6 +1,6 @@
 /*
- * slush-slush-rojo2
- * https://github.com/aitormoreno/slush-slush-rojo2
+ * slush-rojo2
+ * https://github.com/aitormoreno/slush-rojo2
  *
  * Copyright (c) 2014, 
  * Licensed under the BSD license.

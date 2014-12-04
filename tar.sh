@@ -8,7 +8,7 @@ cd ..
 printf "We're creating your tarball, please, be patient\n"
 
 # create the tarball
-tar -cvzf $output $input >/dev/null 2>&1
+tar -cvzf $output --exclude node_modules --exclude .git $input
 
 # save the output
 result=$?
