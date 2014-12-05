@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     plugins = require('gulp-load-plugins')(),
+    browserify = require('browserify'),
     browserSync = require('browser-sync'),
     source = require('vinyl-source-stream');
 
