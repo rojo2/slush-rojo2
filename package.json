@@ -7,6 +7,16 @@
     "name": "Aitor Moreno",
     "email": "aitor@rojo2.com"
   },
+  "contributors": [
+    {
+      "name": "Aitor Moreno",
+      "email": "aitor@rojo2.com"
+    },
+    {
+      "name": "Omar Moreno",
+      "email": "omar@rojo2.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/rojo2/slush-rojo2.git"
@@ -22,8 +32,8 @@
   ],
   "main": "slushfile.js",
   "engines": {
-    "node": ">= 0.10.26",
-    "npm": ">=1.4.3"
+    "node": ">=5.2.0",
+    "npm": ">=3.3.12"
   },
   "scripts": {
     "test": "echo \"No tests\""
