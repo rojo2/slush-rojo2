@@ -1,60 +1,107 @@
-var gulp = require('gulp'),
-  plugins = require('gulp-load-plugins')(),
-  browserify = require('browserify'),
-  browserSync = require('browser-sync'),
-  source = require('vinyl-source-stream');
+"use strict";
 
-gulp.task('scripts', function() {
-  var stream = browserify('src/scripts/index.js')
+const gulp = require("gulp"),
+      plugins = require("gulp-load-plugins")(),
+      browserify = require("browserify"),
+      babelify = require("babelify"),
+      source = require("vinyl-source-stream"),
+      path = require("path"),
+      bs = require("browser-sync");
+
+const CONFIG = {
+
+  SRC: {
+    SCRIPTS:    "./src/scripts/**/*.js",
+    STYLES:     "./src/styles/**/*.styl",
+    TEMPLATES:  "./src/templates/**/*.jade"
+  },
+
+  INDEX: {
+    SCRIPT: "./src/scripts/index.js",
+    STYLE: "./src/styles/index.styl",
+    TEMPLATE: "./src/templates/index.jade"
+  },
+
+  BUILD: {
+    SCRIPT: "./build/",
+    STYLE: "./build/",
+    TEMPLATE: "./build/"
+  },
+
+  GLOBALS: {
+    TEMPLATE: {
+
+    },
+    STYLE: {
+
+    },
+    SCRIPT: {
+
+    }
+  }
+
+};
+
+gulp.task("scripts-lint", () => {
+
+  gulp.src(CONFIG.SRC.SCRIPTS)
+    .pipe(plugins.eslint())
+    .pipe(plugins.eslint.format());
+
+});
+
+gulp.task("scripts", () => {
+
+  browserify(CONFIG.INDEX.SCRIPT, { debug: true })
+    .transform(babelify)
     .bundle()
-    .pipe(source('index.js'))
-    .pipe(gulp.dest('dist/js'));
+    .pipe(source(path.basename(CONFIG.INDEX.SCRIPT)))
+    .pipe(gulp.dest(CONFIG.BUILD.SCRIPT))
+    .pipe(bs.stream());
 
-  if (browserSync.active) {
-    stream.pipe(browserSync.reload({
-      stream: true
-    }));
-  }
 });
 
-gulp.task('styles', function() {
-  var stream = gulp.src('src/styles/index.less')
-    .pipe(plugins.less())
-    .pipe(gulp.dest('dist/css'));
+gulp.task("styles-lint", () => {
 
-  if (browserSync.active) {
-    stream.pipe(browserSync.reload({
-      stream: true
-    }));
-  }
+  gulp.src(CONFIG.SRC.STYLES)
+    .pipe(plugins.stylint({ config: ".stylintrc" }))
+    .pipe(plugins.stylint.reporter());
+
 });
 
-gulp.task('templates', function() {
-  var stream = gulp.src('src/templates/*.jade')
+gulp.task("styles", () => {
+
+  gulp.src(CONFIG.INDEX.STYLE)
+    .pipe(plugins.stylus())
+    .pipe(gulp.dest(CONFIG.BUILD.STYLE))
+    .pipe(bs.stream());
+
+});
+
+gulp.task("templates", () => {
+
+  gulp.src(CONFIG.INDEX.TEMPLATE)
     .pipe(plugins.jade({
-      pretty: true
+      pretty: true,
+      locals: CONFIG.GLOBALS.TEMPLATE
     }))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest(CONFIG.BUILD.TEMPLATE))
+    .pipe(bs.stream());
 
-  if (browserSync.active) {
-    stream.pipe(browserSync.reload({
-      stream: true
-    }));
-  }
 });
 
-gulp.task('browser-sync', ['templates', 'scripts', 'styles'], function() {
-  browserSync({
+gulp.task("watch", ["scripts", "templates", "styles"], () => {
+
+  gulp.watch(CONFIG.SRC.SCRIPTS, ["scripts"]);
+  gulp.watch(CONFIG.SRC.STYLES, ["styles"]);
+  gulp.watch(CONFIG.SRC.TEMPLATES, ["templates"]);
+
+  bs.init({
     server: {
-      baseDir: 'dist'
+      baseDir: CONFIG.BUILD.TEMPLATE
     }
   });
+
 });
 
-gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('src/scripts/**/*.js', ['scripts']);
-  gulp.watch('src/styles/**/*.less', ['styles']);
-  gulp.watch('src/templates/**/*.jade', ['templates']);
-});
-
-gulp.task('default', ['watch']);
+gulp.task("default", ["watch"]);

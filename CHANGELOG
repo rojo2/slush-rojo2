@@ -2,3 +2,17 @@ v0.1.0:
   date: 2014-10-27
   changes:
     - Initial release.
+
+v0.2.0:
+  date: 2015-12-11
+  changes:
+    - Updated dependencies.
+    - Updated gulp tasks.
+    - Replaced LESS by Stylus.
+    - Enabled Babelify ES6 (preset 2015) by default.
+    - Added .nvmrc, .stylintrc, .babelrc and .eslintrc files.
+    - Removed jQuery and handlebars.
+    - Added Stylus and ES6 linters.
+    - Added .editorconfig files.
+    - Added humans.txt
+    - Added Karma by default.

@@ -1,13 +1,3 @@
-var $ = require('jquery');
-
 /**
- * index.js
- *
- *	This file MUST contain every module or every TypeScript, CoffeeScript to include
- * in the main program.
+ * Here goes the magic
  */
-$(function() {
-
-    console.log('Hello world!');
-
-});
