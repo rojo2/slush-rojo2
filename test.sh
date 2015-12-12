@@ -30,7 +30,7 @@ CURRENT_PATH=$(pwd)
 
 # This answers the questions from slush
 # automaticly
-"$CURRENT_PATH/$SLUSH_PATH" rojo2 <<< "test
+"$CURRENT_PATH/../$SLUSH_PATH" rojo2 <<< "test
 
 
 
