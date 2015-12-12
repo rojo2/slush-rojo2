@@ -14,11 +14,8 @@ fi
 # check if slush exists, if not
 # then install slush globally and also
 # install slush-rojo2
-SLUSH_PATH=$(which slush)
-if [ $? != 0 ]; then
-  npm install slush
-  SLUSH_PATH="./node_modules/.bin/slush"
-fi
+npm install -g -f slush
+npm install -g -f slush-rojo2
 
 # enter in "test" directory
 cd "test"
@@ -26,11 +23,8 @@ cd "test"
 # remove everything from "test" directory
 rm -rf *
 
-CURRENT_PATH=$(pwd)
-
-# This answers the questions from slush
-# automaticly
-"$CURRENT_PATH/../$SLUSH_PATH" rojo2 <<< "test
+# execute slush.
+slush rojo2 <<< "test
 
 
 
