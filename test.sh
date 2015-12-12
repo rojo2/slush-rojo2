@@ -14,7 +14,7 @@ fi
 # check if slush exists, if not
 # then install slush globally and also
 # install slush-rojo2
-which slush
+SLUSH_PATH=$(which slush)
 if [ $? != 0 ]; then
   npm install -g -f slush
 fi
@@ -27,7 +27,7 @@ rm -rf *
 
 # This answers the questions from slush
 # automaticly
-slush rojo2 <<< "test
+SLUSH_PATH rojo2 <<< "test
 
 
 
