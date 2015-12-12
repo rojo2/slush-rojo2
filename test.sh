@@ -27,7 +27,7 @@ rm -rf *
 
 # This answers the questions from slush
 # automaticly
-SLUSH_PATH rojo2 <<< "test
+$SLUSH_PATH rojo2 <<< "test
 
 
 
