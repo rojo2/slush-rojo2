@@ -1,9 +1,14 @@
 
 /* TEAM */
-Your title: Your name.
-Site: email, link to a contact form, etc.
-Twitter: your Twitter username.
-Location: City, Country.
+Developer: Aitor Moreno Melcón
+Site: http://rojo2.com
+Twitter: @rojo_2
+Location: Madrid, Spain
+
+Designer: Omar Moreno Melcón
+Site: http://rojo2.com
+Twitter: @rojo_2
+Location: Madrid, Spain
 
 /* THANKS */
 Name: name or url
