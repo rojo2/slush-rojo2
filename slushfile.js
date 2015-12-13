@@ -32,7 +32,10 @@ var defaults = (function () {
         };
 
     if (require("fs").existsSync(configFile)) {
-        iniUser = require("iniparser").parseSync(configFile).user;
+        var iniUser = require("iniparser").parseSync(configFile).user;
+        if (iniUser) {
+          user = iniUser;
+        }
     }
 
     return {
