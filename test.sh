@@ -25,10 +25,11 @@ rm -rf *
 
 # execute slush.
 slush rojo2 <<< "test
-
-
-
-
+test
+1.0.0
+test
+test@test.com
+test
 
 "
 
