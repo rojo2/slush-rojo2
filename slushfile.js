@@ -2,7 +2,7 @@
  * slush-rojo2
  * https://github.com/aitormoreno/slush-rojo2
  *
- * Copyright (c) 2014, 
+ * Copyright (c) 2014,
  * Licensed under the BSD license.
  */
 
@@ -26,10 +26,15 @@ var defaults = (function () {
         workingDirName = process.cwd().split("/").pop().split("\\").pop(),
         osUserName = homeDir && homeDir.split("/").pop() || "root",
         configFile = homeDir + "/.gitconfig",
-        user = {};
+        user = {
+          name: "test",
+          email: "test@test.com"
+        };
+
     if (require("fs").existsSync(configFile)) {
         user = require("iniparser").parseSync(configFile).user;
     }
+
     return {
         appName: workingDirName,
         userName: format(user.name) || osUserName,
