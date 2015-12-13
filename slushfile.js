@@ -33,15 +33,12 @@ var defaults = (function () {
 
     if (require("fs").existsSync(configFile)) {
         iniUser = require("iniparser").parseSync(configFile).user;
-        if (iniUser) {
-          user = iniUser;
-        }
     }
 
     return {
         appName: workingDirName,
-        userName: format(user.name) || osUserName,
-        authorEmail: user.email || ""
+        userName: (user && format(user.name)) || osUserName,
+        authorEmail: (user && user.email) || ""
     };
 })();
 
