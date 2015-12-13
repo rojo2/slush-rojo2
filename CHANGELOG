@@ -1,7 +1,9 @@
-v0.1.0:
-  date: 2014-10-27
+v0.2.1:
+  date: 2015-12-13
   changes:
-    - Initial release.
+    - Fixed CHANGELOG format
+    - Added test.sh
+    - Improved gulpfile.js
 
 v0.2.0:
   date: 2015-12-11
@@ -16,3 +18,8 @@ v0.2.0:
     - Added .editorconfig files.
     - Added humans.txt
     - Added Karma by default.
+
+v0.1.0:
+  date: 2014-10-27
+  changes:
+    - Initial release.

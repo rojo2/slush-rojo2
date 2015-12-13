@@ -11,6 +11,9 @@ if [ ! -d "test" ]; then
   mkdir "test"
 fi
 
+# uninstall slush-rojo2 first
+npm uninstall -g slush-rojo2
+
 # check if slush exists, if not
 # then install slush globally and also
 # install slush-rojo2

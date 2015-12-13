@@ -42,7 +42,7 @@ const CONFIG = {
 
 };
 
-gulp.task("scripts-lint", () => {
+gulp.task("scripts:lint", () => {
 
   gulp.src(CONFIG.SRC.SCRIPTS)
     .pipe(plugins.eslint())
@@ -61,7 +61,7 @@ gulp.task("scripts", () => {
 
 });
 
-gulp.task("styles-lint", () => {
+gulp.task("styles:lint", () => {
 
   gulp.src(CONFIG.SRC.STYLES)
     .pipe(plugins.stylint({ config: ".stylintrc" }))
@@ -90,7 +90,7 @@ gulp.task("templates", () => {
 
 });
 
-gulp.task("watch", ["scripts", "templates", "styles"], () => {
+gulp.task("watch", ["build"], () => {
 
   gulp.watch(CONFIG.SRC.SCRIPTS, ["scripts"]);
   gulp.watch(CONFIG.SRC.STYLES, ["styles"]);
