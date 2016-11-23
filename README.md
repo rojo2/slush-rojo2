@@ -1,6 +1,6 @@
 # slush-rojo2 [![Build Status](https://secure.travis-ci.org/rojo2/slush-rojo2.png?branch=master)](https://travis-ci.org/rojo2/slush-rojo2) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-rojo2.png)](http://badges.enytc.com/for/npm/slush-rojo2)
 
-> 
+>
 
 
 ## Getting Started
@@ -40,11 +40,11 @@ See the [CONTRIBUTING Guidelines](https://github.com/rojo2/slush-rojo2/blob/mast
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/rojo2/slush-rojo2/issues).
 
-## License 
+## License
 
 The BSD License
 
-Copyright (c) 2014, 
+Copyright (c) 2014,
 
 All rights reserved.
 

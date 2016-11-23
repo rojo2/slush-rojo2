@@ -1,3 +1,9 @@
+v0.2.4:
+  date: 2016-11-23
+  changes:
+    - Updates deps versions
+    - Changes jasmine for mocha
+
 v0.2.3:
   date: 2015-12-13
   changes:

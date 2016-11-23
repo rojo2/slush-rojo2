@@ -1,0 +1,7 @@
+{
+  "disallowClassLiteralsBeforeIdLiterals": true,
+  "disallowDuplicateAttributes": true,
+  "disallowHtmlText": false,
+  "disallowIdAttributeWithStaticValue": true,
+  "disallowLegacyMixinCall": true
+}

@@ -1,12 +1,9 @@
 {
   "name": "slush-rojo2",
   "description": "ROJO 2 Slush Template",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "homepage": "https://github.com/rojo2/slush-rojo2",
-  "author": {
-    "name": "Aitor Moreno",
-    "email": "aitor@rojo2.com"
-  },
+  "author": "ROJO 2 <hola@rojo2.com> (http://rojo2.com)",
   "contributors": [
     {
       "name": "Aitor Moreno",
@@ -32,11 +29,11 @@
   ],
   "main": "slushfile.js",
   "engines": {
-    "node": ">=5.2.0",
-    "npm": ">=3.3.12"
+    "node": ">=6.9.1",
+    "npm": ">=3.10.8"
   },
   "scripts": {
-    "test": "echo \"No tests\""
+    "test": "./test.sh"
   },
   "dependencies": {
     "slush": ">=1.0.0",
